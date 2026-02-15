@@ -2,96 +2,87 @@
   type: map
   contents:
     - name: Full Name
-      value: Albert Einstein
-    - name: Date of Birth
-      value: 14th March 1879
+      value: Nearchos Potamitis, MSc.
+    - name: Email
+      value: nearchos.potamitis@cs.au.dk
+    - name: Nationality
+      value: Cypriot
     - name: Languages
-      value: English, German
+      value: Greek (Native), English (Full professional proficiency), French (Limited professional proficiency)
 
 - title: Education
   type: time_table
   contents:
-    - title: PhD
-      institution: University of Zurich, Zurich, Switzerland
-      year: 1905
+    - title: Ph.D. in Computer Science
+      institution: Aarhus University, Denmark
+      year: 2025 - 2028
       description:
-        - Description 1.
-        - Description 2.
-        - title: Description 3.
-          contents:
-            - Sub-description 1.
-            - Sub-description 2.
-    - title: Federal teaching diploma
-      institution: Eidgenössische Technische Hochschule, Zurich, Switzerland
-      year: 1900
+        - "Research focus: Efficiency and Reliability in LLM Reasoning"
+        - "Advisor: Prof. Akhil Arora"
+    - title: M.Sc. in Data Science
+      institution: Swiss Federal Institute of Technology, Lausanne (EPFL), Switzerland
+      year: 2022 - 2024
       description:
-        - Description 1.
-        - Description 2.
+        - "Thesis: Fleet of Agents: Coordinated Problem Solving with Large Language Models"
+    - title: B.Sc. in Electrical Engineering
+      institution: Swiss Federal Institute of Technology, Lausanne (EPFL), Switzerland
+      year: 2017 - 2021
+      description:
+        - "Project: Realisation of a tunable light source based on third-order nonlinear interaction in optical fibers"
 
-- title: Experience
+- title: Professional Experience
   type: time_table
   contents:
-    - title: Professor of Theoretical Physics
-      institution: Institute for Advanced Study, Princeton University
-      year: 1933 - 1955
+    - title: Research Assistant
+      institution: Aarhus University, Denmark
+      year: Jan. 2025 - Jul. 2025
       description:
-        - Description 1.
-        - Description 2.
-        - title: Description 3.
-          contents:
-            - Sub-description 1.
-            - Sub-description 2.
-    - title: Visiting Professor
-      institution: California Institute of Technology, Pasadena, California, US
-      year: 1933
+        - Focused on improving the reasoning ability and the cost-quality trade-off of Large Language Models (LLMs).
+        - "As a first author, two full papers accepted to ICML 2025 and EMNLP 2025."
+        - "Advisor: Prof. Akhil Arora."
+    - title: Schuman Trainee
+      institution: European Parliament
+      year: Sep. 2024 - Dec. 2024
       description:
-        - Description 1.
-        - Description 2.
-
-    - title: Director
-      institution: Kaiser Wilhelm Institute for Physics, Berlin, Germany.
-      year: 1917-1933
-
-    - title: Professor of Theoretical Physics
-      institution: Karl-Ferdinand University, Prague, Czechoslovakia
-      year: 1911 - 1917
+        - Schuman trainee at the AI unit of the European Parliament.
+        - Leveraging LLMs to assess whether an application to the Transparency Register adheres to the applicable regulations.
+    - title: Student Researcher (Master Thesis)
+      institution: DLAB, EPFL, Switzerland
+      year: Jan. 2024 - Jun. 2024
       description:
+        - Introduced Fleet of Agents, a novel framework utilizing LLMs as agents to navigate through dynamic tree searches, employing a genetic-type particle filtering approach.
+        - Introduced CacheSaver, a framework that facilitates LLM requests by utilizing asynchronous, batched mechanisms to optimize costs and response time.
+        - Perfect grade of 6/6 in the Master's thesis, awarded to only top 1% of the students.
+    - title: Data Science Intern
+      institution: Prediggo SA, Switzerland
+      year: Jun. 2023 - Sep. 2023
+      description:
+        - Developed an LLM-powered conversational bot to streamline business rule creation, enhancing user experience and accessibility.
+    - title: Research Assistant
+      institution: EPFL FUSTIC, Switzerland
+      year: Nov. 2022 - Apr. 2023
+      description:
+        - Conducted an extensive literature review and led the data collection and analysis of modern urban platforms, evaluating their capabilities in Urban Digital Twins.
 
-    - title: Associate Professor of Theoretical Physics
-      institution: University of Zurich, Zurich, Switzerland
-      year: 1909 - 1911
-
-- title: Open Source Projects
-  type: time_table
+- title: Technical Skills
+  type: map
   contents:
-    - title: <a href="https://github.com/alshedivat/al-folio">al-folio</a>
-      year: 2015-now
-      description: A beautiful, simple, clean, and responsive Jekyll theme for academics.
+    - name: Programming
+      value: Python, JavaScript, Scala, SQL, C++, Shell scripting
+    - name: Frameworks
+      value: PyTorch, TensorFlow, Hugging Face Transformers, Fast.ai, Pandas
+    - name: Misc
+      value: Git, Docker, NodeJs, Matlab, LaTeX, Power BI, Amazon Web Services, Microsoft Azure
 
-- title: Honors and Awards
-  type: time_table
-  contents:
-    - year: 1921
-      items:
-        - Nobel Prize in Physics
-        - Matteucci Medal
-    - year: 2029
-      items:
-        - Max Planck Medal
-
-- title: Academic Interests
+- title: Research Interests
   type: nested_list
   contents:
-    - title: Topic 1.
+    - title: Natural Language Processing
       items:
-        - Description 1.
-        - Description 2.
-    - title: Topic 2.
+        - Efficiency and reliability in LLM reasoning
+        - LLM-based multi-agent systems
+    - title: Machine Learning
       items:
-        - Description 1.
-        - Description 2.
-
-- title: Other Interests
-  type: list
-  contents:
-    - <u>Hobbies:</u> Hobby 1, Hobby 2, etc.
+        - Deep Learning
+        - Graph Neural Networks
+        - Statistical Analysis

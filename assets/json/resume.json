@@ -1,200 +1,222 @@
 {
   "basics": {
-    "name": "Albert Einstein",
-    "label": "Scientist",
+    "name": "Nearchos Potamitis, MSc.",
+    "label": "PhD Student",
     "image": "",
-    "email": "albert@einstein.de",
-    "phone": "(912) 123-4567",
-    "url": "https://alshedivat.github.io/al-folio/",
-    "summary": "A German-born theoretical physicist, widely ranked among the greatest and most influential scientists of all time",
+    "email": "nearchos.potamitis@cs.au.dk",
+    "phone": "",
+    "url": "https://potamitisn.github.io",
+    "summary": "PhD student at Aarhus University researching efficiency and reliability in LLM reasoning.",
     "location": {
-      "address": "2712 Broadway St",
-      "postalCode": "CA 94115",
-      "city": "San Francisco",
-      "countryCode": "US",
-      "region": "California"
+      "city": "Aarhus",
+      "countryCode": "DK",
+      "region": "Denmark"
     },
     "profiles": [
       {
-        "network": "Twitter",
-        "username": "AlbertEinstein",
-        "url": "https://twitter.com/AlbertEinstein"
+        "network": "GitHub",
+        "username": "Potamitisn",
+        "url": "https://github.com/Potamitisn"
+      },
+      {
+        "network": "LinkedIn",
+        "username": "potamitisn",
+        "url": "https://www.linkedin.com/in/potamitisn/"
       }
     ]
   },
   "work": [
     {
-      "name": "Institute for Advanced Study, Princeton University",
-      "position": "Professor of Theoretical Physics",
-      "url": "https://example.com",
-      "startDate": "1933-01-01",
-      "endDate": "1955-01-01",
-      "summary": "Teaching at Palmer Physical Laboratory (now 302 Frist Campus Center). While not a professor at Princeton, I associated with the physics professors and continued to give lectures on campus.",
-      "highlights": ["Relativity"]
-    }
-  ],
-  "volunteer": [
+      "name": "Aarhus University, Denmark",
+      "position": "Research Assistant",
+      "startDate": "2025-01-01",
+      "endDate": "2025-07-01",
+      "summary": "Focused on improving the reasoning ability and the cost-quality trade-off of Large Language Models (LLMs). As a first author, two full papers accepted to ICML 2025 and EMNLP 2025. Advisor: Prof. Akhil Arora.",
+      "highlights": ["ICML 2025", "EMNLP 2025"]
+    },
     {
-      "organization": "People's Climate March",
-      "location": "Zurich, Switzerland",
-      "position": "Lead Organizer",
-      "url": "https://example.com",
-      "startDate": "2014-04-01",
-      "endDate": "2015-07-01",
-      "summary": "Lead organizer for the New York City branch of the People's Climate March, the largest climate march in history.",
-      "highlights": ["Awarded 'Climate Hero' award by Greenpeace for my efforts organizing the march.", "Men of the year 2014 by Time magazine"]
+      "name": "European Parliament",
+      "position": "Schuman Trainee",
+      "startDate": "2024-09-01",
+      "endDate": "2024-12-01",
+      "summary": "Schuman trainee at the AI unit of the European Parliament. Leveraging LLMs to assess whether an application to the Transparency Register adheres to the applicable regulations."
+    },
+    {
+      "name": "DLAB, EPFL, Switzerland",
+      "position": "Student Researcher (Master Thesis)",
+      "startDate": "2024-01-01",
+      "endDate": "2024-06-01",
+      "summary": "Introduced Fleet of Agents, a novel framework utilizing LLMs as agents to navigate through dynamic tree searches. Introduced CacheSaver, a framework that facilitates LLM requests by utilizing asynchronous, batched mechanisms. Perfect grade of 6/6 (top 1%).",
+      "highlights": ["Fleet of Agents", "CacheSaver", "6/6 grade (top 1%)"]
+    },
+    {
+      "name": "Prediggo SA, Switzerland",
+      "position": "Data Science Intern",
+      "startDate": "2023-06-01",
+      "endDate": "2023-09-01",
+      "summary": "Developed an LLM-powered conversational bot to streamline business rule creation, enhancing user experience and accessibility."
+    },
+    {
+      "name": "EPFL FUSTIC, Switzerland",
+      "position": "Research Assistant",
+      "startDate": "2022-11-01",
+      "endDate": "2023-04-01",
+      "summary": "Conducted an extensive literature review and led the data collection and analysis of modern urban platforms, evaluating their capabilities in Urban Digital Twins."
     }
   ],
   "education": [
     {
-      "institution": "University of Zurich, Zurich, Switzerland",
-      "location": "Zurich, Switzerland",
-      "url": "https://www.uzh.ch/",
-      "area": "Software Development",
+      "institution": "Aarhus University, Denmark",
+      "location": "Aarhus, Denmark",
+      "area": "Computer Science",
       "studyType": "PhD",
-      "startDate": "1905-01-01",
-      "endDate": "1905-01-01",
-      "score": "10",
-      "courses": ["Theory of Relativity"]
-    }
-  ],
-  "awards": [
-    {
-      "title": "Nobel Prize in Physics",
-      "date": "1921-11-01",
-      "awarder": "Royal Swedish Academy of Sciences",
-      "url": "https://www.nobelprize.org/prizes/physics/1921/einstein/biographical/",
-      "summary": "The Nobel Prizes are five separate prizes that, according to Alfred Nobel's will of 1895, are awarded to 'those who, during the preceding year, have conferred the greatest benefit to humankind.'"
-    }
-  ],
-  "certificates": [
-    {
-      "name": "Machine Learning",
-      "date": "2018-01-01",
-      "issuer": "Stanford University",
-      "url": "https://example.com",
-      "icon": "fa-solid fa-location-dot"
+      "startDate": "2025-01-01",
+      "endDate": "2028-01-01"
     },
     {
-      "name": "Quantum Computing",
-      "date": "2018-01-01",
-      "issuer": "Stanford University",
-      "url": "https://example.com",
-      "icon": "fa-solid fa-tag"
+      "institution": "Swiss Federal Institute of Technology, Lausanne (EPFL)",
+      "location": "Lausanne, Switzerland",
+      "area": "Data Science",
+      "studyType": "MSc",
+      "startDate": "2022-01-01",
+      "endDate": "2024-01-01",
+      "courses": ["Thesis: Fleet of Agents: Coordinated Problem Solving with Large Language Models"]
     },
     {
-      "name": "Quantum Information",
-      "date": "2018-01-01",
-      "issuer": "Stanford University",
-      "url": "https://example.com",
-      "icon": "fa-solid fa-envelope"
-    },
-    {
-      "name": "Quantum Cryptography",
-      "date": "2018-01-01",
-      "issuer": "Stanford University",
-      "url": "https://example.com",
-      "icon": "fa-solid fa-hashtag"
-    },
-    {
-      "name": "Quantum Communication",
-      "date": "2018-01-01",
-      "issuer": "Stanford University",
-      "url": "https://example.com",
-      "icon": "fa-solid fa-calendar"
-    },
-    {
-      "name": "Quantum Teleportation",
-      "date": "2018-01-01",
-      "issuer": "Stanford University",
-      "url": "https://example.com",
-      "icon": "fa-solid fa-clipboard-check"
+      "institution": "Swiss Federal Institute of Technology, Lausanne (EPFL)",
+      "location": "Lausanne, Switzerland",
+      "area": "Electrical Engineering",
+      "studyType": "BSc",
+      "startDate": "2017-01-01",
+      "endDate": "2021-01-01"
     }
   ],
   "publications": [
     {
-      "name": "Zur Elektrody/namik bewegter Körper",
-      "publisher": "Annalen der Physik",
-      "releaseDate": "1905-06-30",
-      "url": "https://en.wikisource.org/wiki/Translation:On_the_Electrodynamics_of_Moving_Bodies",
-      "summary": "It concerned an interpretation of the Michelson–Morley experiment and the properties of light and time. Special relativity incorporates the principle that the speed of light is the same for all inertial observers regardless of the state of motion of the source."
+      "name": "Fleet of Agents: Coordinated Problem Solving with Large Language Models",
+      "publisher": "ICML 2025",
+      "releaseDate": "2025-01-01",
+      "summary": "A novel framework utilizing LLMs as agents to navigate through dynamic tree searches, employing a genetic-type particle filtering approach."
     },
     {
-      "name": "Über einen die Erzeugung und Verwandlung des Lichtes betreffenden heuristischen Gesichtspunkt",
-      "publisher": "Annalen der Physik",
-      "releaseDate": "1905-03-18",
-      "url": "https://de.wikisource.org/wiki/Über_einen_die_Erzeugung_und_Verwandlung_des_Lichtes_betreffenden_heuristischen_Gesichtspunkt",
-      "summary": "In the second paper, he applied the quantum theory to light to explain the photoelectric effect. In particular, he used the idea of light quanta (photons) to explain experimental results, but stressed the importance of the experimental results. The importance of his work on the photoelectric effect earned him the Nobel Prize in Physics in 1921."
+      "name": "CacheSaver: A Modular Framework for Efficient, Affordable, and Reproducible LLM Inference",
+      "publisher": "EMNLP 2025 Findings",
+      "releaseDate": "2025-01-01",
+      "summary": "A framework that facilitates LLM requests by utilizing asynchronous, batched mechanisms to optimize costs and response time."
     },
     {
-      "name": "Die Grundlage der allgemeinen Relativitätstheorie",
-      "publisher": "Annalen der Physik",
-      "releaseDate": "1916-03-20",
-      "url": "https://de.wikisource.org/wiki/Die_Grundlage_der_allgemeinen_Relativitätstheorie",
-      "summary": "The publication of the theory of general relativity made him internationally famous. He was professor of physics at the universities of Zurich (1909–1911) and Prague (1911–1912), before he returned to ETH Zurich (1912–1914)."
+      "name": "ReasonBench: Benchmarking the (In)Stability of LLM Reasoning",
+      "publisher": "Under review: ICML 2026",
+      "releaseDate": "2026-01-01",
+      "summary": "Benchmarking the stability and reliability of LLM reasoning capabilities."
+    },
+    {
+      "name": "Are Retrials All You Need? Enhancing Large Language Model Reasoning Without Verbalized Feedback",
+      "publisher": "EXAIT Workshop, ICML 2025",
+      "releaseDate": "2025-01-01",
+      "summary": "Exploring retrials as a method for enhancing LLM reasoning without verbalized feedback."
     }
   ],
   "skills": [
     {
-      "name": "Physics",
-      "level": "Master",
-      "icon": "fa-solid fa-hashtag",
-      "keywords": [
-        "Quantum Mechanics",
-        "Quantum Computing",
-        "Quantum Information",
-        "Quantum Cryptography",
-        "Quantum Communication",
-        "Quantum Teleportation"
-      ]
+      "name": "Programming",
+      "icon": "fa-solid fa-code",
+      "keywords": ["Python", "JavaScript", "Scala", "SQL", "C++", "Shell scripting"]
+    },
+    {
+      "name": "Frameworks",
+      "icon": "fa-solid fa-gears",
+      "keywords": ["PyTorch", "TensorFlow", "Hugging Face Transformers", "Fast.ai", "Pandas"]
+    },
+    {
+      "name": "Tools",
+      "icon": "fa-solid fa-screwdriver-wrench",
+      "keywords": ["Git", "Docker", "NodeJs", "Matlab", "LaTeX", "Power BI", "AWS", "Microsoft Azure"]
     }
   ],
   "languages": [
     {
-      "language": "German",
-      "fluency": "Native speaker",
+      "language": "Greek",
+      "fluency": "Native",
       "icon": ""
     },
     {
       "language": "English",
-      "fluency": "Fluent",
+      "fluency": "Full professional proficiency",
+      "icon": ""
+    },
+    {
+      "language": "French",
+      "fluency": "Limited professional proficiency",
       "icon": ""
     }
   ],
   "interests": [
     {
-      "name": "Physics",
+      "name": "Natural Language Processing",
       "icon": "fa-solid fa-tag",
       "keywords": [
-        "Quantum Mechanics",
-        "Quantum Computing",
-        "Quantum Information",
-        "Quantum Cryptography",
-        "Quantum Communication",
-        "Quantum Teleportation"
+        "LLM Reasoning",
+        "Multi-Agent Systems",
+        "Efficient Inference"
+      ]
+    },
+    {
+      "name": "Machine Learning",
+      "icon": "fa-solid fa-chart-line",
+      "keywords": [
+        "Deep Learning",
+        "Graph Neural Networks",
+        "Statistical Analysis"
       ]
     }
   ],
   "references": [
     {
-      "name": "Professor John Doe",
+      "name": "Prof. Akhil Arora",
       "icon": "fa-solid fa-laptop",
-      "reference": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam condimentum, diam quis convallis euismod, arcu mi ullamcorper lorem, a vestibulum nunc magna at sem. Sed in risus ac felis varius blandit. D"
+      "reference": "Assistant Professor, Department of Computer Science, Aarhus University, Denmark. akhil.arora@cs.au.dk"
     },
     {
-      "name": "Professor John Doe",
-      "icon": "fa-solid fa-thumbtack",
-      "reference": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam condimentum, diam quis convallis euismod, arcu mi ullamcorper lorem, a vestibulum nunc magna at sem. Sed in risus ac felis varius blandit. D"
+      "name": "Prof. Robert West",
+      "icon": "fa-solid fa-laptop",
+      "reference": "Associate Professor, School of Computer and Communication Sciences, EPFL, Switzerland. robert.west@epfl.ch"
+    },
+    {
+      "name": "Prof. Caglar Gulcehre",
+      "icon": "fa-solid fa-laptop",
+      "reference": "Assistant Professor, School of Computer and Communication Sciences, EPFL, Switzerland. caglar.gulcehre@epfl.ch"
+    },
+    {
+      "name": "Dr. Lars Henning Klein",
+      "icon": "fa-solid fa-laptop",
+      "reference": "Co-founder and CTO, Timely, EPFL, Switzerland. lars.klein@epfl.ch"
     }
   ],
   "projects": [
     {
-      "name": "Quantum Computing",
-      "summary": "Quantum computing is the use of quantum-mechanical phenomena such as superposition and entanglement to perform computation. Computers that perform quantum computations are known as quantum computers.",
-      "highlights": ["Quantum Teleportation", "Quantum Cryptography"],
-      "startDate": "2018-01-01",
-      "endDate": "2018-01-01",
-      "url": "https://example.com"
+      "name": "Semester Project - DLAB",
+      "summary": "Use of foundation models to simulate and study human web navigation.",
+      "startDate": "2024-01-01",
+      "endDate": "2024-01-01"
+    },
+    {
+      "name": "Deep Learning in Biomedicine - EPFL",
+      "summary": "Introduced and tested a novel benchmark for few-shot learning algorithms.",
+      "startDate": "2023-01-01",
+      "endDate": "2023-01-01"
+    },
+    {
+      "name": "Natural Language Processing - EPFL",
+      "summary": "Used reinforcement learning from human feedback (RLHF) to train an LLM powered chatbot.",
+      "startDate": "2023-01-01",
+      "endDate": "2023-01-01"
+    },
+    {
+      "name": "Deep Learning - EPFL",
+      "summary": "Implemented and deployed a deep learning framework to train an image restoration model.",
+      "startDate": "2023-01-01",
+      "endDate": "2023-01-01"
     }
   ]
 }
