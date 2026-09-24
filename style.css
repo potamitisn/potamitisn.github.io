@@ -1,0 +1,356 @@
+/* Light is the default. Dark applies from the system preference unless the visitor picked
+   a theme with the toggle, which sets data-theme on <html>. */
+:root {
+  color-scheme: light dark;
+
+  --bg: #f7f4ee;
+  --panel: #fffdf9;
+  --ink: #1f1c18;
+  --ink-soft: #5f5951;
+  --ink-muted: #8f877c;
+  --rule: #e4ded3;
+  --accent: #b1502f;
+
+  --display: "Fraunces", "Iowan Old Style", Georgia, serif;
+  --text: "Lora", "Iowan Old Style", Georgia, serif;
+
+  --measure: 40rem; /* main column */
+  --wide: 54rem; /* news + awards */
+  --gutter: 1.25rem;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #171512;
+    --panel: #1e1b17;
+    --ink: #ece7dd;
+    --ink-soft: #b3aca0;
+    --ink-muted: #7c766c;
+    --rule: #2c2823;
+    --accent: #e0825f;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #171512;
+  --panel: #1e1b17;
+  --ink: #ece7dd;
+  --ink-soft: #b3aca0;
+  --ink-muted: #7c766c;
+  --rule: #2c2823;
+  --accent: #e0825f;
+}
+
+/* Which label the toggle shows */
+.if-dark {
+  display: none;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .if-light {
+    display: none;
+  }
+  :root:not([data-theme="light"]) .if-dark {
+    display: inline;
+  }
+}
+:root[data-theme="dark"] .if-light {
+  display: none;
+}
+:root[data-theme="dark"] .if-dark {
+  display: inline;
+}
+:root[data-theme="light"] .if-light {
+  display: inline;
+}
+:root[data-theme="light"] .if-dark {
+  display: none;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: var(--text);
+  font-size: 18px;
+  line-height: 1.55;
+  -webkit-text-size-adjust: 100%;
+}
+@media (max-width: 600px) {
+  html {
+    font-size: 16.5px;
+  }
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  text-rendering: optimizeLegibility;
+  font-feature-settings: "kern", "liga";
+}
+
+a {
+  color: var(--ink);
+  text-decoration: underline;
+  text-decoration-color: var(--accent);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.16em;
+  transition: color 0.15s;
+}
+a:hover,
+a:focus-visible {
+  color: var(--accent);
+}
+:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
+  font-family: var(--display);
+  font-weight: 400;
+  line-height: 1.1;
+  letter-spacing: -0.005em;
+  font-variation-settings:
+    "SOFT" 100,
+    "WONK" 1;
+}
+h1 {
+  font-size: clamp(2.4rem, 6vw, 3.4rem);
+  font-variation-settings:
+    "opsz" 144,
+    "SOFT" 100,
+    "WONK" 1;
+  letter-spacing: -0.015em;
+}
+h2 {
+  font-size: 1.7rem;
+  font-variation-settings:
+    "opsz" 72,
+    "SOFT" 100,
+    "WONK" 1;
+  margin-bottom: 1.25rem;
+}
+h3 {
+  font-size: 1.22rem;
+  font-variation-settings:
+    "opsz" 40,
+    "SOFT" 100,
+    "WONK" 1;
+  line-height: 1.28;
+  text-wrap: balance;
+}
+h3 a {
+  text-decoration: none;
+}
+p {
+  margin: 0 0 0.9rem;
+}
+p:last-child {
+  margin-bottom: 0;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+strong {
+  font-weight: 500;
+}
+
+/* ===== Theme toggle ===== */
+.theme {
+  position: absolute;
+  top: 1rem;
+  right: 1.25rem;
+  font: inherit;
+  font-size: 0.8rem;
+  color: var(--ink-muted);
+  background: none;
+  border: 1px solid var(--rule);
+  border-radius: 999px;
+  padding: 0.25rem 0.75rem;
+  cursor: pointer;
+}
+.theme:hover {
+  color: var(--accent);
+  border-color: var(--accent);
+}
+
+/* ===== Columns ===== */
+main {
+  width: min(100% - 2 * var(--gutter), var(--measure));
+  margin-inline: auto;
+  padding: 4rem 0 3rem;
+}
+@media (max-width: 600px) {
+  main {
+    padding-top: 3.5rem;
+  }
+}
+.bottom {
+  width: min(100% - 2 * var(--gutter), var(--measure));
+  margin-inline: auto;
+  padding: 0 0 3rem;
+  color: var(--ink-muted);
+  font-size: 0.85rem;
+  text-align: center;
+}
+
+/* ===== Header ===== */
+.me {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  align-items: start;
+}
+@media (min-width: 640px) {
+  .me {
+    grid-template-columns: 1fr auto;
+    gap: 2.5rem;
+  }
+}
+.portrait {
+  width: 10rem;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  object-position: center 20%;
+  border-radius: 50%;
+  order: -1;
+}
+@media (min-width: 640px) {
+  .portrait {
+    order: 0;
+    width: 12rem;
+    margin-top: 0.5rem;
+  }
+}
+.role {
+  margin: 0.6rem 0 1.25rem;
+  color: var(--ink-soft);
+  font-size: 0.95rem;
+}
+.bio {
+  font-size: 1.02rem;
+}
+.contact {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem 1.1rem;
+  margin-top: 1.1rem;
+  font-size: 0.9rem;
+}
+.contact a {
+  text-decoration: none;
+  color: var(--ink-soft);
+}
+.contact a::before {
+  content: "→ ";
+  color: var(--accent);
+}
+.contact a:hover {
+  color: var(--accent);
+}
+
+/* ===== Papers ===== */
+.papers {
+  margin-top: 4rem;
+}
+.paper {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.9rem 1.5rem;
+  padding: 1.5rem 0;
+  border-top: 1px solid var(--rule);
+}
+.paper:last-child {
+  border-bottom: 1px solid var(--rule);
+}
+@media (min-width: 560px) {
+  .paper {
+    grid-template-columns: 9.5rem 1fr;
+  }
+}
+.fig {
+  display: block;
+  border-radius: 10px;
+  overflow: hidden;
+  border: 1px solid var(--rule);
+  background: var(--panel);
+  aspect-ratio: 4 / 3;
+  max-width: 14rem;
+}
+.fig img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.authors {
+  margin: 0.4rem 0 0;
+  color: var(--ink-soft);
+  font-size: 0.92rem;
+  line-height: 1.4;
+}
+.authors strong {
+  color: var(--ink);
+}
+.venue {
+  margin: 0.25rem 0 0;
+  font-size: 0.92rem;
+  font-style: italic;
+  color: var(--ink-soft);
+}
+.venue .note {
+  font-style: normal;
+  color: var(--ink-muted);
+  font-size: 0.8rem;
+  margin-left: 0.5rem;
+}
+.summary {
+  margin: 0.6rem 0 0;
+  font-size: 0.95rem;
+  line-height: 1.45;
+}
+
+/* ===== News + awards, wider than the main column ===== */
+.wide {
+  width: min(100vw - 2 * var(--gutter), var(--wide));
+  margin-left: 50%;
+  transform: translateX(-50%);
+  margin-top: 4rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2.5rem 3rem;
+}
+@media (min-width: 720px) {
+  .wide {
+    grid-template-columns: 3fr 2fr;
+  }
+}
+.dated {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 0.93rem;
+}
+.dated li {
+  display: grid;
+  grid-template-columns: 5.2rem 1fr;
+  gap: 0.75rem;
+  padding: 0.45rem 0;
+  border-top: 1px solid var(--rule);
+}
+.dated li:last-child {
+  border-bottom: 1px solid var(--rule);
+}
+.dated time {
+  color: var(--ink-muted);
+  font-size: 0.85rem;
+  padding-top: 0.12rem;
+  white-space: nowrap;
+}
