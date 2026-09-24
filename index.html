@@ -1,0 +1,228 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Nearchos Potamitis</title>
+    <meta name="description" content="Nearchos Potamitis is a PhD student at Aarhus University working on efficiency and reliability in LLM reasoning." />
+    <meta name="keywords" content="nearchos potamitis, aarhus university, llm reasoning, machine learning, computer science" />
+    <meta name="author" content="Nearchos Potamitis" />
+    <link rel="canonical" href="https://potamitisn.github.io/" />
+    <meta name="theme-color" content="#f7f4ee" />
+
+    <meta property="og:type" content="profile" />
+    <meta property="og:title" content="Nearchos Potamitis" />
+    <meta property="og:description" content="PhD student at Aarhus University working on efficiency and reliability in LLM reasoning." />
+    <meta property="og:url" content="https://potamitisn.github.io/" />
+    <meta property="og:image" content="https://potamitisn.github.io/assets/prof_pic.jpg" />
+
+    <link rel="icon" type="image/png" sizes="64x64" href="assets/favicon.png" />
+    <link rel="apple-touch-icon" href="assets/apple-touch-icon.png" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght,SOFT,WONK@9..144,400..500,100,1&family=Lora:ital,wght@0,400;0,500;1,400&display=swap"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+    <script>
+      // Apply the saved theme before first paint. Without a saved choice the system preference applies.
+      try {
+        var t = localStorage.getItem("theme");
+        if (t === "light" || t === "dark") document.documentElement.setAttribute("data-theme", t);
+      } catch (e) {}
+    </script>
+  </head>
+
+  <body>
+    <button class="theme" type="button" aria-label="Switch between light and dark theme">
+      <span class="if-light">Dark</span><span class="if-dark">Light</span>
+    </button>
+
+    <main>
+      <!-- ===== Header ===== -->
+      <header class="me">
+        <div class="me-text">
+          <h1>Nearchos Potamitis</h1>
+          <p class="role">
+            PhD student, <a href="https://cs.au.dk/">Department of Computer Science</a>,
+            <a href="https://www.au.dk/">Aarhus University</a>
+          </p>
+          <p class="bio">
+            I work on how large language models reason, supervised by
+            <a href="https://au-clan.github.io/people/aarora/">Akhil Arora</a> and <a href="https://www.linkedin.com/in/lars-henning-klein/">Lars Klein</a>. I am interested in making
+            that reasoning cheaper and making it dependable enough that you get the same answer twice. Before Aarhus I
+            studied electrical engineering and then data science at <a href="https://www.epfl.ch/">EPFL</a>, where my
+            master's thesis at <a href="https://dlab.epfl.ch/">DLAB</a> became <em>Fleet of Agents</em>.
+          </p>
+          <nav class="contact" aria-label="Contact">
+            <a href="mailto:nearchos.potamitis@cs.au.dk">Email</a>
+            <a href="assets/cv.pdf">CV</a>
+            <a href="https://scholar.google.com/citations?user=AbPMQm4AAAAJ">Scholar</a>
+            <a href="https://github.com/Potamitisn">GitHub</a>
+            <a href="https://www.linkedin.com/in/potamitisn/">LinkedIn</a>
+          </nav>
+        </div>
+        <img class="portrait" src="assets/prof_pic.jpg" alt="Nearchos Potamitis" width="779" height="960" />
+      </header>
+
+      <!-- ===== Papers ===== -->
+      <section class="papers" aria-labelledby="papers-h">
+        <h2 id="papers-h">Selected papers</h2>
+
+        <article class="paper">
+          <a class="fig" href="https://scholar.google.com/citations?user=AbPMQm4AAAAJ" tabindex="-1" aria-hidden="true">
+            <img src="assets/figures/fleet.svg" alt="" width="400" height="300" />
+          </a>
+          <div class="paper-body">
+            <h3><a href="https://scholar.google.com/citations?user=AbPMQm4AAAAJ">Fleet of Agents: Coordinated Problem Solving with Large Language Models</a></h3>
+            <p class="authors"><a href="https://scholar.google.com/citations?user=KNwJK-UAAAAJ">Lars Klein*</a>, <strong>Nearchos Potamitis*</strong>, <a href="https://scholar.google.com/citations?user=S9dHiKkAAAAJ">Roland Aydin</a>, <a href="https://scholar.google.com/citations?user=ZiFn598AAAAJ">Robert West</a>, <a href="https://scholar.google.com/citations?user=7hwJ2ckAAAAJ">Caglar Gulcehre</a>, <a href="https://scholar.google.com/citations?user=uCrGCckAAAAJ">Akhil Arora</a></p>
+            <p class="venue">ICML 2025 <span class="note">* equal contribution</span></p>
+            <p class="summary">
+              A group of LLM agents explore a problem as a dynamic tree search, using genetic-type particle filtering to decide
+              which branches deserve more compute.
+            </p>
+          </div>
+        </article>
+
+        <article class="paper">
+          <a class="fig" href="https://scholar.google.com/citations?user=AbPMQm4AAAAJ" tabindex="-1" aria-hidden="true">
+            <img src="assets/figures/cachesaver.svg" alt="" width="400" height="300" />
+          </a>
+          <div class="paper-body">
+            <h3><a href="https://scholar.google.com/citations?user=AbPMQm4AAAAJ">CacheSaver: A Modular Framework for Efficient, Affordable, and Reproducible LLM Inference</a></h3>
+            <p class="authors"> <strong>Nearchos Potamitis*</strong>, <a href="https://scholar.google.com/citations?user=KNwJK-UAAAAJ">Lars Klein*</a>, <a href="https://scholar.google.com/citations?user=T1NMacAAAAAJ">Bardia Mohammadi</a>, <a href="https://scholar.google.com/citations?user=dE4eYgwAAAAJ">Attreyee Mokherjee</a>, <a href="https://chongyang-xu.github.io/">Chongyang Xu</a>, <a href="https://scholar.google.com/citations?user=dt14rAQAAAAJ">Laurent Bindschaedler</a>, <a href="https://scholar.google.com/citations?user=9uWuZkUAAAAJ">Niket Tandon</a>, <a href="https://scholar.google.com/citations?user=uCrGCckAAAAJ">Akhil Arora</a> </p>
+            <p class="venue">Findings of EMNLP 2025 <span class="note">* equal contribution</span></p>
+            <p class="summary">
+              An asynchronous, batched request layer that sits between your code and the LLM, cutting cost and latency while
+              keeping experiments reproducible.
+            </p>
+          </div>
+        </article>
+
+        <article class="paper">
+          <a class="fig" href="https://scholar.google.com/citations?user=AbPMQm4AAAAJ" tabindex="-1" aria-hidden="true">
+            <img src="assets/figures/tutorial.svg" alt="" width="400" height="300" />
+          </a>
+          <div class="paper-body">
+            <h3><a href="https://scholar.google.com/citations?user=AbPMQm4AAAAJ">Current Advances in LLM Reasoning</a></h3>
+            <p class="authors"><a href="https://scholar.google.com/citations?user=uCrGCckAAAAJ">Akhil Arora</a>, <a href="https://scholar.google.com/citations?user=CXlp-fcAAAAJ">Vishrav Chaudhary</a>, <a href="https://scholar.google.com/citations?user=j4cOSzAAAAAJ">Julia Kreutzer</a>, <strong>Nearchos Potamitis</strong>, <a href="https://scholar.google.com/citations?user=IqcCDXkAAAAJ">Nouha Dziri</a>, <a href="https://scholar.google.com/citations?user=9uWuZkUAAAAJ">Niket Tandon</a></p>
+            <p class="venue">Tutorial, ACL 2026 and IJCAI-ECAI 2026</p>
+            <p class="summary">
+              A tutorial on where LLM reasoning stands today: how models are trained and prompted to reason, how that reasoning
+              is evaluated, and what remains open.
+            </p>
+          </div>
+        </article>
+
+        <article class="paper">
+          <a class="fig" href="https://scholar.google.com/citations?user=AbPMQm4AAAAJ" tabindex="-1" aria-hidden="true">
+            <img src="assets/figures/atomix.svg" alt="" width="400" height="300" />
+          </a>
+          <div class="paper-body">
+            <h3><a href="https://scholar.google.com/citations?user=AbPMQm4AAAAJ">Atomix: Timely, Transactional Tool Use for Reliable Agentic Workflows</a></h3>
+            <p class="authors"><a href="https://scholar.google.com/citations?user=T1NMacAAAAAJ">Bardia Mohammadi*</a>, <strong>Nearchos Potamitis</strong>, <a href="https://scholar.google.com/citations?user=KNwJK-UAAAAJ">Lars Klein</a>, <a href="https://scholar.google.com/citations?user=uCrGCckAAAAJ">Akhil Arora</a>, <a href="https://scholar.google.com/citations?user=dt14rAQAAAAJ">Laurent Bindschaedler</a></p>
+            <p class="venue">ICLR 2026 workshops</p>
+            <p class="summary">
+              Treats an agent's tool calls like database transactions, so that a multi-step workflow can be kept consistent and
+              recovered when a step fails.
+            </p>
+          </div>
+        </article>
+
+        <article class="paper">
+          <a class="fig" href="https://scholar.google.com/citations?user=AbPMQm4AAAAJ" tabindex="-1" aria-hidden="true">
+            <img src="assets/figures/reasonbench.svg" alt="" width="400" height="300" />
+          </a>
+          <div class="paper-body">
+            <h3><a href="https://scholar.google.com/citations?user=AbPMQm4AAAAJ">ReasonBench: Benchmarking the (In)Stability of LLM Reasoning</a></h3>
+            <p class="authors"><strong>Nearchos Potamitis*</strong>, <a href="https://scholar.google.com/citations?user=hKH8NPoAAAAJ">V. Ramani*</a>, <a href="https://scholar.google.com/citations?user=O5UsI_UAAAAJ">H. A. Arora</a>, <a href="https://scholar.google.com/citations?user=DdWfV9gAAAAJ">D. Kuchhal</a>, <a href="https://scholar.google.com/citations?user=KNwJK-UAAAAJ">Lars Klein</a>, <a href="https://scholar.google.com/citations?user=uCrGCckAAAAJ">Akhil Arora</a></p>
+            <p class="venue">REALM Workshop, EMNLP 2026 (spotlight) <span class="note">* equal contribution</span></p>
+            <p class="summary">
+              A benchmark for how much an LLM's reasoning changes from run to run, so that reliability can be measured instead
+              of assumed.
+            </p>
+          </div>
+        </article>
+
+        <article class="paper">
+          <a class="fig" href="https://scholar.google.com/citations?user=AbPMQm4AAAAJ" tabindex="-1" aria-hidden="true">
+            <img src="assets/figures/retrials.svg" alt="" width="400" height="300" />
+          </a>
+          <div class="paper-body">
+            <h3><a href="https://scholar.google.com/citations?user=AbPMQm4AAAAJ">Are Retrials All You Need? Enhancing Large Language Model Reasoning Without Verbalized Feedback</a></h3>
+            <p class="authors"><strong>Nearchos Potamitis</strong>, <a href="https://scholar.google.com/citations?user=uCrGCckAAAAJ">Akhil Arora</a></p>
+            <p class="venue">REALM Workshop, EMNLP 2026 (spotlight)</p>
+            <p class="summary">
+              Simply retrying a failed reasoning attempt is a surprisingly strong baseline, often matching methods that ask the
+              model to critique itself.
+            </p>
+          </div>
+        </article>
+      </section>
+
+      <!-- ===== News and awards (wider than the main column) ===== -->
+      <section class="wide" aria-label="News and awards">
+        <div class="col">
+          <h2>News</h2>
+          <ul class="dated">
+            <li><time>Sep 2026</time><span><em>ReasonBench</em> and <em>Are Retrials All You Need?</em> accepted as spotlights at the REALM workshop, EMNLP 2026.</span></li>
+            <li><time>Aug 2026</time><span>Co-presented the tutorial <em>Current Advances in LLM Reasoning</em> at IJCAI-ECAI 2026.</span></li>
+            <li><time>Jul 2026</time><span>Co-presented the tutorial <em>Current Advances in LLM Reasoning</em> at ACL 2026.</span></li>
+            <li><time>Apr 2026</time><span><em>Atomix</em> presented at ICLR 2026 workshops.</span></li>
+            <li><time>Aug 2025</time><span>Started my PhD at Aarhus University.</span></li>
+            <li><time>Aug 2025</time><span><em>CacheSaver</em> accepted to Findings of EMNLP 2025.</span></li>
+            <li><time>Jul 2025</time><span>Presented <em>Fleet of Agents</em> at ICML 2025 in Vancouver.</span></li>
+            <li><time>May 2025</time><span><em>Fleet of Agents</em> accepted at ICML 2025.</span></li>
+            <li><time>Jan 2025</time><span>Joined Aarhus University as a research assistant.</span></li>
+          </ul>
+        </div>
+        <div class="col">
+          <h2>Awards</h2>
+          <ul class="dated">
+            <li>
+              <time>2026</time>
+              <span><strong>Gold Reviewer, ICML 2026.</strong> Recognised as a top reviewer, with complimentary conference registration.</span>
+            </li>
+            <li>
+              <time>2025</time>
+              <span><strong>Holberg Prize Masterclass.</strong> Selected to take part in the 2025 masterclass.</span>
+            </li>
+            <li>
+              <time>2025</time>
+              <span><strong>ICML 2025 travel funding.</strong> Registration and accommodation fully covered by the conference.</span>
+            </li>
+            <li>
+              <time>2024</time>
+              <span><strong>Master's thesis, EPFL.</strong> Graded 6/6.</span>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <footer class="bottom">
+      <p>Aarhus, Denmark</p>
+    </footer>
+
+    <script>
+      document.querySelectorAll('a[href^="http"]').forEach(function (a) {
+        a.target = "_blank";
+        a.rel = "noopener";
+      });
+
+      document.querySelector(".theme").addEventListener("click", function () {
+        var root = document.documentElement;
+        var cur = root.getAttribute("data-theme");
+        if (!cur) cur = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+        var next = cur === "dark" ? "light" : "dark";
+        root.setAttribute("data-theme", next);
+        try {
+          localStorage.setItem("theme", next);
+        } catch (e) {}
+      });
+    </script>
+  </body>
+</html>

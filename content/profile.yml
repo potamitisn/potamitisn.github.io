@@ -1,0 +1,43 @@
+# Single source of truth for personal info. Extracted from the old al-folio site
+# (_config.yml, _pages/about.md, _data/socials.yml) on 2026-09-24.
+
+name: Nearchos Potamitis
+first_name: Nearchos
+last_name: Potamitis
+title: PhD Student
+affiliation:
+  department: Department of Computer Science
+  department_url: https://cs.au.dk/
+  university: Aarhus University
+  university_url: https://www.au.dk/
+  location: Aarhus, Denmark
+advisors:
+  - name: Prof. Akhil Arora
+    url: https://au-clan.github.io/people/aarora/
+  - name: Lars Klein
+    url: https://www.linkedin.com/in/lars-henning-klein/
+research_focus: Efficiency and reliability in LLM reasoning
+
+site:
+  url: https://potamitisn.github.io
+  description: Personal academic website of Nearchos Potamitis, PhD Student at Aarhus University.
+  keywords: nearchos potamitis, aarhus university, llm reasoning, machine learning, computer science
+
+contact:
+  email: nearchos.potamitis@cs.au.dk
+  github: Potamitisn            # https://github.com/Potamitisn
+  linkedin: potamitisn          # https://www.linkedin.com/in/potamitisn/
+  google_scholar_id: AbPMQm4AAAAJ   # https://scholar.google.com/citations?user=AbPMQm4AAAAJ
+
+assets:
+  profile_picture: assets/prof_pic.jpg
+  favicon: assets/favicon.jpg
+  cv_pdf: assets/cv.pdf
+
+# Bio as shown on the old home page (Markdown).
+bio: |
+  I am a PhD student at the [Department of Computer Science](https://cs.au.dk/) at [Aarhus University](https://www.au.dk/), advised by [Prof. Akhil Arora](https://au-clan.github.io/people/aarora/). My research focuses on efficiency and reliability in LLM reasoning.
+
+  Previously, I obtained my M.Sc. in Data Science and B.Sc. in Electrical Engineering from [EPFL](https://www.epfl.ch/). During my master's thesis at [DLAB](https://dlab.epfl.ch/), I introduced *Fleet of Agents*, a framework utilizing LLMs as agents for coordinated problem solving, receiving a perfect grade of 6/6 (top 1%).
+
+  I have also worked as a Schuman Trainee at the AI unit of the **European Parliament** and as a Data Science Intern at **Prediggo SA**.
